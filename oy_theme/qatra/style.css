@@ -1,0 +1,151 @@
+body{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	direction:rtl;
+	margin:0; padding:0px;
+}
+table{
+	border:rgba(0,102,51,1) solid 0px;
+}
+select,input{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+}
+a{ text-decoration:none; color:rgba(51,153,153,1);}			
+a:hover{color: rgba(51,102,51,1);}				
+
+
+
+/*TOP MENU*/
+	#mess{
+		line-height:24px;
+		
+		
+		}	
+.menu{
+      font: 12px/27px Tahoma;
+
+      color:#3366CC;
+      height:30px;
+      background: url(back.gif) repeat-x;
+}
+.menu a:hover{
+    background-color:#e4ebf8;
+}
+.menu a {
+    text-decoration: none;
+    padding: 4px 12px 7px;
+    color:#3366CC;
+    outline:none;
+}
+.menu ul{
+    list-style: none;
+
+    margin:0;
+    padding:0 0 0 10px;
+}
+.menu ul li{
+    padding:0;
+    float:right;
+    
+}
+.menu ul li ul li{
+    padding:0;
+    float:none;
+    margin: 0 0 0 0px;
+    width:100%;
+}
+.menu ul li ul{
+    position: absolute;
+    border: 1px solid #C3D1EC;
+    box-shadow: 0 1px 5px #CCCCCC;
+    margin-top: -1px;
+    display:none;
+    padding: 0px 0px 0px 16px;
+}
+.active ul{
+    display:block !important; 
+}
+.active a{
+    background-color: white;
+    border: 1px solid #C3D1EC;
+    border-bottom: 0;
+    box-shadow: 0 -1px 5px #CCCCCC;
+    display: block;
+    height: 29px;
+    padding: 0 8px 0 8px;
+    position:relative;
+    z-index: 1;
+}
+.active a:hover{
+    background-color:white;
+}
+.active ul a:hover{
+    background-color:#e4ebf8;
+}
+
+.active ul a{
+    border: 0 !important;
+    box-shadow: 0 0 0 #CCCCCC;
+    border:0;
+    width: 100%;
+}
+.arrow {
+    border-color: #3366CC transparent transparent;
+    border-style: solid dashed dashed;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+} 
+		/*TOP MENU*/
+		
+/*	Data Table Style*/
+
+
+	
+	
+#datatbl, #datatbl td{
+	font:12px Tahoma, Geneva, sans-serif; color:#006; ; 
+}
+
+#datatbl th, #datatbl td{text-align:center;padding:.5em;border:1px solid #fff;}
+#datatbl th{background:#328aa4;color:#fff;}
+//#datatbl td{background:#e5f1f4;}
+
+/* tablecloth styles */
+#datatbl tr:nth-child(even) {background: #e5f1f4}
+#datatbl tr:nth-child(odd) {background: #FFF}
+
+
+
+
+
+/* use this if you want to apply different styleing to empty table cells*/
+#datatbl td.empty, tr.odd td.empty, tr.even td.empty{background:#fff;}
+
+
+.repbanner{
+	
+	width:100%;color:rgba(255,255,255,0.7); height:150px; font-family:Tahoma, Geneva, sans-serif; font-size:9px; text-align:left; background:url(../img/ban.png) no-repeat center #006;
+	}
+	
+.tox td{
+	color:#FFF;
+	background-color:#0CC;
+	font-weight:bold;
+	
+	
+	}.toxz td{
+	color:#FFF;
+	background-color:#9F9;
+	font-weight:bold;
+	
+	
+	}
+	.deleted td{
+		
+		color:#FFF;
+	background-color:#000;
+	font-weight:bold;
+	text-align:center;
+		}

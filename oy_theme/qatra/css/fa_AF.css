@@ -1,0 +1,138 @@
+.Pull-right{float: right;}
+.Pull-left{float: left;}
+
+@font-face {
+	font-family: "yekan";
+	src: url(fonts/Yekan.eot);
+	src: url(fonts/Yekan.eot?#iefix) format("embedded-opentype"), url(fonts/Yekan.woff) format("woff"), url(fonts/Yekan.ttf) format("truetype"), url(fonts/Yekan.svg#BYekan) format("svg");
+	font-weight: normal;
+	font-style: normal
+}
+
+
+@font-face{
+    font-family:"bodyfont";
+    src:url(fonts/IRANSans-Light-web.woff) format('woff'),url(fonts/IRANSans-Light-web.ttf) format('truetype');
+    font-weight:400}
+@font-face{
+    font-family:"titlefont";
+    src:url(fonts/IRANSans-Bold-web.woff) format('woff'), url(fonts/IRANSans-Bold-web.ttf) format('truetype');font-weight:700
+}
+
+body{ direction: rtl; font-family: "bodyfont"; font-size: 12px;}
+
+.post-content{font-family: "bodyfont"}
+
+.dropdown-content ul > li.title{font-family: "yekan"}
+
+
+
+
+.top-nav{
+   
+    background-color: #f1f1f1;
+     margin: 0;
+    /*         position: relative;*/
+    position:absolute; top:0; width: 100%;
+/*    background:#4679bd; */
+        
+    height: 52px;
+    //border-bottom: 2px solid #f63056; 
+    border-radius: 0; 
+   
+}
+
+
+/* Remove margins and padding from the list, and add a black background color */
+.dropdown-content li a{text-align: right;}
+.dropdown-content li img{ float: right;}
+/* Float the list items side by side */
+
+.sidebar a.list-group-item:hover{
+    padding-right: 20px;
+}
+/* Style the links inside the list items */
+ul.topnav li a,ul.topnav .til {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: 0.6s;
+     font-size: 17px; 
+}
+
+/* Change background color of links on hover */
+
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon,ul.topnav .til  {display: none;}
+
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  
+    
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: left;
+    display: inline-block;
+  }
+  ul.topnav .til  {display: inline-block;}
+  ul.topnav{width: 100%;}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+    
+  ul.topnav.responsive {position: relative; z-index:99999 }
+  ul.topnav.responsive li.icon {
+    position: absolute; float: left;
+    left: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+  }
+   ul.topnav{width: 100%;}
+}
+
+
+
+ul.topnav li {float: right;}
+
+
+ul.topnav li a,ul.topnav .til {
+    font-family: "yekan";
+}
+
+ ul.topnav.responsive li a {
+    text-align: right;
+  }
+  
+  
+  #avatarimgpg{margin:0; right: 20px; top:-250%; position: absolute; max-width:100px; max-height:95px;  z-index: 100;}
+    
+  
+   .blue_head { font-family: "yekan"; font-weight: 400; }
+.blue_header{background-color:#006699;color:#746E49;background:url(gre-head.gif);background-repeat:repeat-x;height:25px;text-align:left;border:#4B29A0 2px;table-layout:fixed;-webkit-border-radius: 5px;
+             -moz-border-radius: 5px;
+             border-radius: 5px; padding-left:20px;}
+h1, h2, h3 , h4, h5{
+    font-family: "yekan"; font-weight: 400;    
+}
+table{ direction: rtl; text-align: right}
+
+table th { direction: rtl; text-align: right; font-family: "yekan";}
+table td { text-align: right; font-family: "bodyfont"; font-size: 12px}
+table thead{ font-family: "yekan";}
+#main-body h1{ font-size: 24px}
+#main-body h2{ font-size: 18px;  padding:5px}
+#main-body h3{ font-size: 14px}
+#main-body h4{ font-size: 12px}
+.panel-heading{ font-family: "yekan"; font-weight: 400;    }

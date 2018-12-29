@@ -1,0 +1,212 @@
+.Pull-right{float: right;}
+.Pull-left{float: left;}
+
+
+
+@font-face{
+    font-family:"bodyfont";
+    src:url(fonts/IRANSans-Light-web.woff) format('woff'),url(fonts/IRANSans-Light-web.ttf) format('truetype');
+    font-weight:400}
+@font-face{
+    font-family:"titlefont";
+    src:url(fonts/IRANSans-Bold-web.woff) format('woff'), url(fonts/IRANSans-Bold-web.ttf) format('truetype');font-weight:700
+}
+h1,h2,h3,h4{
+    font-family: "titlefont";
+}
+h3{ font-size: 16px;}
+body{ direction: ltr; font-family: "bodyfont"; font-size: 12px;margin:0; padding:0px; padding-top: 35px; -webkit-print-color-adjust: exact;}
+
+tr{background:0;background-color:0;}
+.content-box{
+    width: 1280px; margin: 15px auto ; padding: 0;
+}
+.content-box .sidex{padding:0px;  min-width: 500px; margin: 0px; display: inline-block;}
+.post-content{font-family: "bodyfont"}
+
+
+
+table{
+	border:rgba(0,102,51,1) solid 0px;
+}
+select,input{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+}
+a{ text-decoration:none; color:rgba(51,153,153,1);}			
+a:hover{color: rgba(51,102,51,1);}				
+				
+/*TOP MENU*/
+	#mess{
+		line-height:24px;
+		
+		
+		}	
+.menu{
+     font: 12px/27px Tahoma;
+    position: fixed;top:0; left: 0; width: 100%;
+      color:#3366CC;
+      height:35px;
+      background:rgb(241,241,241);
+      border-bottom: 2px solid #3498db;
+      z-index: 10000;
+}
+.menu a:hover{
+    background-color:#3498db; color: #fff;
+}
+.menu a {
+    text-decoration: none;
+    padding: 4px 12px 7px;
+    color:#3366CC;
+    outline:none;
+    font-family: "bodyfont"; font-size: 12px;
+}
+
+.menu ul{
+    list-style: none;
+ z-index: 10000;
+    margin:0;
+    padding:0 0 0 10px;
+}
+.menu > ul{ width: 1280px; margin:0 auto;}
+.menu ul li{
+    padding:0;
+    float:left;
+     z-index: 10000;
+}
+.menu ul li ul li{
+    padding:0;
+    float:none;
+    margin: 0 ;
+    width:100%; min-width: 170px; z-index: 10000;
+}
+.menu ul li ul{
+    position: absolute;
+    border: 1px solid #C3D1EC;
+    box-shadow: 0 1px 5px #CCCCCC;
+    margin-top: -1px;
+    display:none;
+    background: #fff; min-width: 170px;
+    padding: 5px; z-index: 9999; z-index: 10000;
+}
+.active ul{
+    display:block !important; 
+}
+.active a{
+    background-color: white;
+    //border: 1px solid #C3D1EC;
+    border-bottom: 0;
+   box-shadow: 0 -1px 5px #CCCCCC;
+    display: block;
+    height: 29px;
+    //padding: 0 8px 0 8px;
+    position:relative;
+    z-index: 1;
+}
+.active a:hover{
+    background-color:#3498db;
+}
+.active ul a:hover{
+    background-color:#e4ebf8; color: #333;
+}
+
+.active ul a{
+    border: 0 !important;
+    box-shadow: 0 0 0 #CCCCCC;
+    border:0;
+    width: 100%;
+}
+.arrow {
+    border-color: #3366CC transparent transparent;
+    border-style: solid dashed dashed;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+} 
+		/*TOP MENU*/
+		
+/*	Data Table Style*/
+
+
+	
+	
+#datatbl, #datatbl td{
+	font:12px Tahoma, Geneva, sans-serif; color:#006; ; 
+}
+
+#datatbl th, #datatbl td{text-align:center;padding:.5em;border:1px solid #fff;}
+#datatbl th{background:#328aa4;color:#fff;}
+//#datatbl td{background:#e5f1f4;}
+
+/* tablecloth styles */
+#datatbl tr:nth-child(even) {background: #e5f1f4}
+#datatbl tr:nth-child(odd) {background: #FFF}
+
+
+
+
+
+/* use this if you want to apply different styleing to empty table cells*/
+#datatbl td.empty, tr.odd td.empty, tr.even td.empty{background:#fff;}
+
+
+.repbanner{
+	
+	width:100%;color:rgba(255,255,255,0.7); height:150px; font-family:Tahoma, Geneva, sans-serif; font-size:9px; text-align:left; background:url(../img/ban.png) no-repeat center #006;
+	}
+	
+.tox td{
+	color:#FFF;
+	background-color:#0CC;
+	font-weight:bold;
+	
+	
+	}.toxz td{
+	color:#FFF;
+	background-color:#9F9;
+	font-weight:bold;
+	
+	
+	}
+	.deleted td{
+		
+		color:#FFF;
+	background-color:#000;
+	font-weight:bold;
+	text-align:center;
+		}
+                
+                
+                
+input[type=text],input[type=email],select{
+  border-radius:2px; margin:1px; padding:2px; line-height: 24px;
+  font-size: 12px; font-family: 'bodyfont';
+   border:solid 1px #ccc;
+} 
+
+.well2{padding: 30px; margin: 30px;}
+
+i{ color:#663333}
+
+.viewlink{cursor:pointer}
+input[type=text],select { min-width: 170px; margin:5px 5px 0 5px;  width: 95%; max-width: 300px;}
+.trhead{ font-size: 14px; color:#663333; font-weight: bold;}
+//.well{margin:0;}
+
+
+.panel-heading{ padding: 2px 10px; margin: 0;}
+
+
+.nextday{position:fixed; top:200px; right:0px; background:#C00; padding:5px;}
+.prvday{ position:fixed; top:200px; left:0px;background:#C00; padding:5px;}
+
+
+
+  @media screen
+   {
+  
+    #footer {
+            display: none; visibility: hidden;
+        }
+        
+   }

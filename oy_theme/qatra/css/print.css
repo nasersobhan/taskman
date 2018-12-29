@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 10, 2016, 1:59:38 PM
+    Author     : naser
+*/
+
+
+  
+@media print
+   {
+ //  *{margin:0;}
+ 
+ @page {
+      size: A4 landscape; margin: 2cm 2cm 1cm 2cm;
+ }
+
+
+   #footer {
+         display: block; 
+         position: fixed; height: 40px;
+         bottom: 0; content: "Page " counter(page) " of " counter(pages);  width: 100%; padding-top: 20px; font-size: 9px;
+    } 
+ #footerright {
+         display: block; 
+         position: fixed; 
+         bottom: 0; float: left;
+          content: "Header text goes here"; 
+    } 
+
+
+
+/*@page:left{
+  @bottom-left {
+    content: "Page " counter(page) " of " counter(pages);
+  }
+}*/
+/*.fn {
+  float: footnote;
+}*/
+.s-footer{ display: none;}
+.prvday, .nextday{display: none;}
+
+/*@page:right{ 
+  @bottom-left {
+    margin: 10pt 0 30pt 0;
+    border-top: .25pt solid #666;
+    content: "My book";
+    font-size: 9pt;
+    color: #333;
+  }
+}*/
+
+
+   a[href^="http://"]:after, a[href^="ftp://"]:after
+{
+  content: " (" attr(href) ")";
+  font-size: 10pt;
+} 
+    
+    body {
+        height: 100%;margin: 0; padding: 0;
+        width: 100%;  -webkit-print-color-adjust: exact;
+    }
+
+#datatbl h1,h2,h3{
+    font-size: 18px; text-align: center; padding:10px;;    font-family: 'titlefont';
+}
+#datatbl{
+  border: 1px solid #000; width: 100%;
+   font-size: 18px;
+   font-family: 'bodyfont';font-size: 9px;
+}
+
+#datatbl .bg-danger{
+  background-color: #F2DEDE !important;
+}
+
+#datatbl .bg-success{
+  background-color: #DFF0D8 !important;
+}
+ 
+  
+#datatbl td{border: 1px solid #000; text-align: right;}
+#datatbl th{background-color: #006699 !important; color: #fff; border: 1px solid #000; font-size: 10px;  font-family: 'titlefont';}
+.container{margin:0; padding: 0;}
+
+}
+

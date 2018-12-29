@@ -1,0 +1,116 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+
+
+
+#Options +Indexes
+#Options +FollowSymLinks
+Options -Indexes
+##IndexIgnore *
+#
+#
+#RewriteBase /ooytav1/html/
+
+# Image to short linksss
+#RewriteRule ^i/([^/]*)-([^/]*)(.*)$ oy_engine/oy_core/oy_developer/live/timthumb.php?w=$1&h=$2&src=$3  [L]
+
+
+
+RewriteCond %{REQUEST_URI} !\.(?:css|js|jpe?g|gif|png)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !\.(css|js|png|jpg)$
+#
+#?pg=add&val='.$slug.'&t=' . $type
+#RewriteRule ^([^/]+) ?pg=$1  [NC]
+RewriteRule ^([^/]*)/view/([^/]*).html    index.php?t=$1&pg=view&view=$2  [NC]    # Handle product requests
+RewriteRule ^([^/]*)/view/([^/]*)/page([^/]*).html$    index.php?t=$1&pg=view&view=$2&page=$3  [NC]    # Handle product requests
+
+
+RewriteRule ^([^/]*)/add.php    index.php?t=$1&pg=add  [NC]    # Handle product requests
+RewriteRule ^([^/]*)/edit/([^/]*).html    index.php?t=$1&pg=add&val=$2  [NC]    # Handle product requests
+RewriteRule ^([^/]*)/translate/([^/]*).html    index.php?t=$1&pg=add&oid=$2  [NC]    # Handle product requests
+RewriteRule ^([^/]*)/index.html$    index.php?t=$1&pg=list  [NC]    # Handle product requests
+RewriteRule ^([^/]*)/page-([^/]*).html$    index.php?t=$1&pg=list&page=$2  [NC]    # Handle product requests
+#RewriteRule ^jobs/province/([^/]*)$    index.php?pg=jobs&city=$1  [NC]    # Handle product requests
+
+
+
+#
+#RewriteRule ^([^/]+) ?pg=$1  [NC]
+RewriteRule ^jobs/view/([^/]*).htm$    index.php?pg=jobs&view=$1  [NC]    # Handle product requests
+RewriteRule ^jobs/category/([^/]*)$    index.php?pg=jobs&cate=$1  [NC]    # Handle product requests
+RewriteRule ^jobs/organization/([^/]*)$    index.php?pg=jobs&employer=$1  [NC]    # Handle product requests
+RewriteRule ^jobs/province/([^/]*)$    index.php?pg=jobs&city=$1  [NC]    # Handle product requests
+#RewriteRule ^jobs/page/([^/]*)$    index.php?pg=jobs&page=$1  [NC]    # Handle product requests
+RewriteRule ^jobs-sitemap.xml$    index.php?pg=jobs&xml=1&list=all  [NC]    # Handle product requests
+RewriteRule ^jobs-rss.xml$    index.php?pg=jobs&rss=1  [NC]    # Handle product requests
+RewriteRule ^jobs$    index.php?pg=jobs  [NC]    # Handle product requests
+RewriteRule ^herat25hamal$    index.php?pg=herat  [NC]    # Handle product requests
+
+RewriteRule ^page/view/([^/]*).htm$    index.php?pg=page&view=$1  [NC]    # Handle product requests
+RewriteRule ^page$    index.php?pg=page  [NC]    # Handle product requests
+RewriteRule ^page-sitemap.xml$    index.php?pg=page&xml=1  [NC]    # 
+
+RewriteRule ^page/view/([^/]*).htm$    index.php?pg=page&view=$1  [NC]    # Handle product requests
+RewriteRule ^page$    index.php?pg=page  [NC]    # Handle product requests
+RewriteRule ^page-sitemap.xml$    index.php?pg=page&sitemap=1  [NC]    # Handle product requests
+
+RewriteRule ^bidding/view/([^/]*).htm$    index.php?pg=bidding&view=$1  [NC]    # Handle product requests
+RewriteRule ^bidding/category/([^/]*)$    index.php?pg=bidding&cate=$1  [NC]    # Handle product requests
+RewriteRule ^bidding/organization/([^/]*)$    index.php?pg=bidding&employer=$1  [NC]    # Handle product requests
+
+
+
+
+RewriteRule ^bidding/view/([^/]*).htm$    index.php?pg=bidding&view=$1  [NC]    # Handle product requests
+RewriteRule ^bidding/category/([^/]*)$    index.php?pg=bidding&cate=$1  [NC]    # Handle product requests
+RewriteRule ^bidding/organization/([^/]*)$    index.php?pg=bidding&employer=$1  [NC]    # Handle product requests
+
+#RewriteRule ^jobs/page/([^/]*)$    index.php?pg=jobs&page=$1  [NC]    # Handle product requests
+RewriteRule ^bidding-sitemap.xml$    index.php?pg=bidding&xml=1&list=all  [NC]    # Handle product requests
+RewriteRule ^bidding-rss.xml$    index.php?pg=bidding&rss=1  [NC]    # Handle product requests
+RewriteRule ^bidding    index.php?pg=bidding  [NC]    # Handle product requests
+
+RewriteRule ^websites/view/([^/]*).htm$    index.php?pg=websites&view=$1  [NC]    # Handle product requests
+RewriteRule ^websites/category/([^/]*)$    index.php?pg=websites&cate=$1  [NC]    # Handle product requests
+
+RewriteRule ^web-sitemap.xml$    index.php?pg=websites&xml=1&list=all  [NC]    # Handle product requests
+RewriteRule ^websites    index.php?pg=websites  [NC]    # Handle product requests
+
+
+
+
+#content
+RewriteRule ^content/([^/]*).htm$    index.php?pg=content&view=$1  [NC]    # Handle product requests
+
+
+
+
+
+
+ErrorDocument 403 "/?pg=404"
+ErrorDocument 404 "/?pg=404"
+
+
+#RewriteEngine on
+#RewriteCond  %{QUERY_STRING}  ^job&view=(.*)$
+#RewriteRule .* http://naserlap/"ooytav1"/html/jobs/view/%1? [L,R=301]
+
+#RewriteCond %{HTTP_HOST} ^hongkonghustle\.com
+#RewriteRule ^(.*)$ http://www.hongkonghustle.com/$1 [R=permanent,L]
+#
+#RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_URI} !(.*)/$
+#RewriteRule ^(.*)$ http://www.hongkonghustle.com/$1/ [L,R=301]
+#
+#
+
+
+# END WordPress
+
+
+

@@ -1,0 +1,11 @@
+<h2>Job Post Report</h2>
+<p>
+Dear Valuable User,
+Thank you for your posting in karyabee Job portal,<br/>
+the below Job posting has been expired:</p>
+<p>Job Title: <a href="{JOBURL}"><strong style="color:green; font-weight:bold">{TITLE}</strong></a><br/>
+  Organization Name: <strong style="color:green; font-weight:bold">{ORG}</strong><br/>
+  Job Views: <strong style="color:green; font-weight:bold">{HITS}</strong><br/>
+  Online Job Applications: <a href="{APPURL}"><strong style="color:green; font-weight:bold">{APP}</strong></a><br/>
+Expired in: <strong style="color:green; font-weight:bold">{EDATE}</strong>
+</p>

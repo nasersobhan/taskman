@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700|Signika:400,600,700);
+@import "https://fonts.googleapis.com/css?family=Roboto:400,300";  
+
+
+body{ font-family: "Roboto"; direction: ltr;}
+
+
+.dropdown-content ul > li.title{font-family: "Roboto"}
+
+.Pull-right{float: right;}
+.Pull-left{float: left;}
+
+
+
+
+
+
+
+.top-nav{
+   
+    background-color: #f1f1f1;
+     margin: 0;
+    /*         position: relative;*/
+    position:absolute; top:0; width: 100%;
+/*    background:#4679bd; */
+        
+    height: 52px;
+ 
+    border-radius: 0; 
+   
+}
+
+
+/* Remove margins and padding from the list, and add a black background color */
+
+.sidebar a.list-group-item:hover{
+    padding-left: 20px;
+}
+/* Float the list items side by side */
+.dropdown-content li a{text-align: left;}
+.dropdown-content li img{ float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a,ul.topnav .til {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: 0.6s;
+     font-size: 17px; 
+}
+
+
+/* Change background color of links on hover */
+//ul.topnav li a:hover, .topnav li a.active  {background-color: #2890bf; color: #f7f7f7;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon,ul.topnav .til  {display: none;}
+
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+    .langclass{ left:0;}
+    
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+   float: right;
+    display: inline-block;
+  }
+  ul.topnav .til  {display: inline-block;}
+  ul.topnav{width: 100%;}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+     .langclass{ left:0;}
+  ul.topnav.responsive {position: relative; z-index:99999 }
+  ul.topnav.responsive li.icon {
+    position: absolute; 
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+  }
+   ul.topnav{width: 100%;}
+}
+
+ul.topnav li {float: left;}
+
+
+ul.topnav li a,ul.topnav .til {
+ font-family: "Ubuntu";
+}
+
+ ul.topnav.responsive li a {
+    text-align: left;
+  }
+  
+#avatarimgpg{margin:0; left: 20px; top:-250%; position: absolute; max-width:100px; max-height:95px;  z-index: 100; }
+  .blue_head { font-family: "Ubuntu"; font-weight: 400; }
+  
+
+  
+  
+  
+.blue_header{background-color:#006699;color:#746E49;background:url(gre-head.gif);background-repeat:repeat-x;height:25px;text-align:left;border:#4B29A0 2px;table-layout:fixed;-webkit-border-radius: 5px;
+             -moz-border-radius: 5px;
+             border-radius: 5px; padding-left:20px;}
+
+
+h1, h2, h3 , h4, h5{
+    font-family: "Ubuntu"; font-weight: 400;    
+}
+table{ direction: ltr; text-align: left}
+
+table th { text-align: left; font-family: "Ubuntu";}
+table td { text-align: left;  font-size: 12px}
+table thead{ font-family: "Ubuntu";}
+#main-body h1{ font-size: 24px}
+#main-body h2{ font-size: 18px;  padding:5px}
+#main-body h3{ font-size: 14px}
+#main-body h4{ font-size: 12px}
+.panel-heading{ font-family: "Ubuntu"; font-weight: 400;    }
