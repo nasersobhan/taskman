@@ -2,10 +2,13 @@
 A simple Task Manager and Support Ticket System
 
 * Multi Department
-* Asign to Specifec Supporter
-* File attachment and dicustions 
-* Mutli lanaguage
+* Asign to Specific Supporter
+* File attachment and discussions
+* Mutli language
 * Auto Email System (for Create, comment, complete)
+* work progress
+* easy to use
+* ooyta ODE
 
 
 ![taskman](sc.png)
